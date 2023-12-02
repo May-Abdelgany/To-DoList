@@ -25,8 +25,10 @@ const CustomizedDialogs = ({ task, open, onClose, title, buttonName }) => {
                 onClose={() => onClose()}
                 aria-labelledby="customized-dialog-title"
                 open={open}
+
+
             >
-                <DialogTitle className='text-bold text-primary' sx={{ m: 0, p: 2 }} id="customized-dialog-title">
+                <DialogTitle className='text-bold text-primary fs-2'  sx={{ m: 0, p: 2 ,minWidth:'350px'}} id="customized-dialog-title">
                     {title}
                 </DialogTitle>
                 <IconButton
@@ -41,7 +43,7 @@ const CustomizedDialogs = ({ task, open, onClose, title, buttonName }) => {
                 >
                     <CloseIcon />
                 </IconButton>
-                <AddForm task={task}  onClose={onClose} buttonName={buttonName}></AddForm>
+                <AddForm task={task} onClose={onClose} buttonName={buttonName}></AddForm>
             </BootstrapDialog >
         </>
     );

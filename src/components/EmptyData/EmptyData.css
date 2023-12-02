@@ -3,15 +3,16 @@
 }
 
 .empty-state__content {
-    padding: 48px;
+    padding: 48px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .empty-state__content .empty-state__icon {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     display: flex;
     align-items: center;
     border-radius: 200px;
@@ -26,12 +27,13 @@
 
 .empty-state__content .empty-state__message {
     color: #1763ae;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-top: 0.85rem;
 }
 
 .empty-state__content .empty-state__help {
     color: #a2a5b9;
-    font-size: 0.875rem;
+    margin-top: .5rem;
+    font-size: 1.5rem;
 }

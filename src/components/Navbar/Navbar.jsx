@@ -11,8 +11,8 @@ const Navbar = () => {
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="fixed">
                     <Toolbar variant="dense">
-                        <Typography variant="h6" color="inherit" component="div" >
-                            <div>LOGO</div>
+                        <Typography variant="h4" color="inherit" component="div" >
+                            <div className='py-2'>LOGO</div>
                         </Typography>
                     </Toolbar>
                 </AppBar>

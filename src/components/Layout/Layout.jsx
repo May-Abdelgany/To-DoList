@@ -35,10 +35,10 @@ const Layout = () => {
             <CustomizedDialogs buttonName={buttonName} open={open} onClose={handleClose} title={title}></CustomizedDialogs>
             <Navbar></Navbar>
             <div className='my-5'>
-                <h1 className='pt-3 text-center'>All Tasks</h1>
+                <h1 className='pt-4  text-center'>All Tasks</h1>
                 <div className='container'>
                     <div className=' d-flex justify-content-end'>
-                        <Button variant="contained" onClick={add}><AddIcon></AddIcon>Add</Button>
+                        <Button variant="contained" size='large' className='px-3' onClick={add}><AddIcon></AddIcon>Add</Button>
                     </div>
                     {
                         tasks.length ? <div className='row'>

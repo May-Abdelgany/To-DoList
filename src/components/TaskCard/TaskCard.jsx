@@ -39,10 +39,10 @@ const TaskCard = ({ task }) => {
 
                 <CardActionArea>
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div" className='fw-bold'>
+                        <Typography gutterBottom  variant="h5" component="div" className='fw-bold fs-3'>
                             {task.title}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant="body2" color="text.secondary" className='fs-5'>
                             {task.task}
                         </Typography>
                     </CardContent>
@@ -50,14 +50,14 @@ const TaskCard = ({ task }) => {
                 <CardActions>
                     <div className='d-flex justify-content-between w-100 align-items-center'>
                         <div>
-                            <Button size="small" color="warning" onClick={update}>
+                            <Button size="large" color="warning" onClick={update}>
                                 update
                             </Button>
-                            <Button size="small" color="error" onClick={deleteTask}>
+                            <Button size="large" color="error" onClick={deleteTask}>
                                 delete
                             </Button>
                         </div>
-                        <FormControlLabel control={<Checkbox checked={task.isComplete} onClick={handleChange} />} label={
+                        <FormControlLabel  control={<Checkbox checked={task.isComplete} onClick={handleChange} />} label={
                             task.isComplete ? 'complete' : 'not completed'
                         } />
 

@@ -119,7 +119,7 @@ const AddForm = ({ task, onClose, buttonName }) => {
                         id="standard-multiline-static"
                         label="Task"
                         multiline
-                        rows={4}
+                        rows={7}
                         variant="outlined"
                         name="task"
                         value={formData.task}
@@ -131,7 +131,8 @@ const AddForm = ({ task, onClose, buttonName }) => {
                 </div>
             </Box>
             <DialogActions>
-                <Button color={getButtonColor({ buttonName })} type="submit" variant="contained">
+                <Button size='large' className='px-4 ' color={getButtonColor({ buttonName })} type="submit" variant="contained">
+
                     {buttonName}
                 </Button>
             </DialogActions>
